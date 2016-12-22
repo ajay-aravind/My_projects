@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Anaganagaa Oka Snake..!!</title>
+<link type='text/css'  rel='stylesheet' href='snake_style.css'></style>
+<script src='jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+var as=jQuery.noConflict();
+</script>
+<script type='text/javascript' src='mask&food_management.js'></script>
+<script type='text/javascript' src='snake.js'></script>
+</head>
+
+<body>
+<div class='mask' id='mask'>
+
+</div>
+
+<div class='mask-material' id='mask1'>
+		<div class='inner-div'>
+			<div class='score_text'>Your score was:<span  id='fscore'>00</span></div>
+			<form action='' onsubmit="takename">
+			Enter your name:<input type='text' name='name' id='pname' />
+			<input type='submit' value='submit' class='s_button'/>
+			</form>
+		</div>
+	</div>
+<img src='Game over.jpg' class='game' id='gameover' style='height:200px;'/>
+
+<div class='border' id='border'>
+<div class="hai01" id='snake00'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake02'>$</div>
+<div class="hai01" id='snake03'>$</div>
+<div class="hai01" id='snake04'>$</div>
+<div class="hai01" id='snake05'>$</div>
+<div class="hai01" id='snake06'>$</div>
+<div class="hai01" id='snake07'>$</div>
+<div class="hai01" id='snake08'>$</div>
+<div class="hai01" id='snake09'>$</div>
+<div class="hai01" id='snake10'>$</div>
+<div class="hai01" id='snake11'>$</div>
+<div class="hai01" id='snake12'>$</div>
+<div class="hai01" id='snake13'>$</div><div class="hai01" id='snake14'>$</div><div class="hai01" id='snake15'>$</div><div class="hai01" id='snake16'>$</div>
+<div class="hai01" id='snake'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div>
+<div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div><div class="hai01" id='snake01'>$</div>
+</div>
+	<div class='navbar'>
+		<button type='button' id='start'>Start/Stop</button>
+		<div class='score' id='score'> Score:
+				<span class='svalue' id='svalue'>00</span>
+		</div>
+	</div>
+
+</body>
+</html>

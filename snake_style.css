@@ -1,0 +1,135 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#DED5C7;
+	background-image:url('bodybg.jpg');
+}
+.navbar{
+	background-color:#678BE0;
+	box-shadow:2px 2px black;
+	padding-left:2px;
+	padding-top:2px;
+	width:30%;
+	float:left;
+	padding:10px 10px;
+	border-radius:10px;
+	margin-left:10px;
+	}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.hai01{	
+	width:30px;
+	border:2px solid #0000FF;
+	border-radius:2px;
+	box-shadow:2px 2px black;
+	background: #8080FF;
+	text-align:center;
+	padding:5px;
+	position:relative;
+	margin:0px;
+	float:left;
+	visibility:hidden;
+	}
+.border{
+	padding:5px;
+	min-height:545px;
+	width:750px;
+	border:15px ridge #996600;
+	border-radius:10px;
+	background-color:#B9EDB6;
+	float:left;
+	background-image:url('bg.jpg');
+	}
+.game{
+	left:350px;
+	top:225px;
+	width:100px;
+	height:50px;
+	position:fixed;
+	z-index:1;
+	display:none;
+	}
+#start{
+	z-index:2;
+	padding:10px;
+	border-radius:10px;
+	font-size:20px;
+	margin:0px 0px 20px 0px;
+	float:left;
+	border:1px solid blue;
+	background-color:#2DDB1A;
+	}
+#start:hover{
+	cursor:pointer;
+	background-color:#24C838;
+	box-shadow:2px 2px 4px 1px blue;
+	}
+	
+#score{
+	max-width:100px;
+	padding:11px 20px 11px 20px;
+	border:2px solid black;
+	background-color:#CFCCC7;
+	float:right;
+	border-radius:10px;
+	font-size:20px
+	}
+.mask{
+	display:none;
+	margin:0px;
+	/*border:2px outset #2F2FFF;
+	background: #5151FF;*/
+	padding:100px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	z-index:5;
+	background-color:blue;
+	opacity:0.1;
+	}
+#mask1{
+	display:none;
+	position:fixed;
+	top:250px;
+	left:220px;
+	border:2px outset #2F2FFF;
+	background: #5151FF;
+	height:100px;
+	width:300px;
+	padding:2px;
+	z-index:6;
+	opacity:1.0;
+	}	
+.inner-div{
+	background: #D1D1D1;
+	border-radius:5px;
+	padding:5px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:16px;
+	}
+.score_text{
+	padding-left:70px;
+	}
+.s_button{
+	padding:4px 8px 4px 8px;
+	background-attachment:fixed;
+	background-image:url('44.jpg');
+	border-radius:4px;
+	opacity:0.7;
+	margin-top:5px;
+	margin-left:195px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:16px;
+	font-weight:bold;
+	}
+.s_button:hover{
+	opacity:1.0;
+	cursor:pointer;
+	}	
